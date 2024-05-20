@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import LogoIcon from "../../../../public/Vector.svg";
-import Burger_icon from "../../../../public/burger_toggle.svg";
-import X_icon from "../../../../public/x_icon.svg";
+import LogoIcon from "../../../public/Vector.svg";
+import Burger_icon from "../../../public/burger_toggle.svg";
+import X_icon from "../../../public/x_icon.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -47,10 +47,12 @@ const Navbar = () => {
         </button>
         {isOpen && (
           <nav className="absolute top-0 right-0 w-full h-screen text-black">
-            <div className="w-full h-[80px] flex items-center justify-end px-5 bg-primary">
-              <button onClick={() => setIsOpen(false)}>
-                <Image src={X_icon} alt="X Icon" width={18} height={18} />
-              </button>
+            <div className="w-full h-[80px] bg-primary">
+              <div className="container mx-auto h-full flex items-center justify-end px-2 ">
+                <button onClick={() => setIsOpen(false)}>
+                  <Image src={X_icon} alt="X Icon" width={18} height={18} />
+                </button>
+              </div>
             </div>
             <ul className="flex flex-col items-center justify-start h-[calc(100vh-80px)] bg-white">
               <li className="w-full h-[calc(100%/8)] flex items-center justify-center text-center border border-b-0 border-black">
