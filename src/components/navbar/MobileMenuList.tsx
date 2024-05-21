@@ -15,7 +15,7 @@ const MobileMenuList = () => {
       initial={{ opacity: 0, x: 200 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 200 }}
-      className="absolute top-0 right-0 w-full h-screen bg-white lg:hidden"
+      className="absolute top-0 right-0 w-full h-screen z-50 bg-white lg:hidden"
     >
       <div className="w-full h-[80px] bg-accent-primary">
         <div className="container h-full mx-auto flex items-center justify-end">
