@@ -30,12 +30,16 @@ const Navbar = () => {
 
   return (
     <header
-      className={`w-full h-[80px] fixed top-0 left-0 transition-colors ${
+      className={`w-full h-[80px] fixed top-0 left-0 transition-colors z-50 ${
         isScrolled ? "bg-accent-primary" : "bg-transparent"
       }`}
     >
       <div className="container h-full mx-auto flex items-center justify-between">
-        <div className="p-2 rounded-full">
+        <div
+          className={`p-2 rounded-full ${
+            isScrolled ? "bg-white" : "bg-transparent"
+          }`}
+        >
           <NavLogo />
         </div>
         <Toggle onClick={() => setMenuOpen(true)} responsive>

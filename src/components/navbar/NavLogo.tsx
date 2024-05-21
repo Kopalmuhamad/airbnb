@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import navLogo from "@/assets/icons/Vector.svg";
+import navLogo from "@/assets/icons/logo.svg";
 
 const NavLogo = () => {
   return (
