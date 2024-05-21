@@ -6,7 +6,7 @@ const DesktopMenuList = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="hidden lg:block text-white">
+    <nav className="hidden lg:block text-black">
       <ul className="flex items-center justify-center gap-x-4">
         <li>
           <Link
