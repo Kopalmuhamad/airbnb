@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         "accent-primary": "#219ebc",
         "accent-secondary": "#c1121f",
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/images/banner1.jpg')"
       }
     },
   },
