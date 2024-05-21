@@ -7,14 +7,12 @@ interface PropertyListProps {
 
 const PropertyList = ({ value }: PropertyListProps) => {
   return (
-    <section className="w-full">
-      <div className="w-full h-full flex items-start justify-center flex-col">
-        <header className="py-4">
-          <h1 className="text-xl font-bold">{value}</h1>
-        </header>
-        <CardSlider />
-      </div>
-    </section>
+    <div className="w-full h-full flex items-start justify-center flex-col py-4">
+      <header className="py-6">
+        <h1 className="text-xl font-bold">{value}</h1>
+      </header>
+      <CardSlider />
+    </div>
   );
 };
 

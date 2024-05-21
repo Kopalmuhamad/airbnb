@@ -18,7 +18,7 @@ const CardSlider = () => {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="w-full flex justify-center mt-[80px]">
+    <div className="w-full flex justify-center">
       {" "}
       {/* Added margin to push down below Navbar */}
       <Swiper
