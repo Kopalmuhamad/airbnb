@@ -50,7 +50,7 @@ const CardSlider = () => {
             className="shadow-xl text-black p-4 border border-black rounded-lg -z-10"
           >
             <Link
-              href={""}
+              href={'/detailProperty'}
               className="w-full flex flex-col items-start text-start justify-center"
             >
               <Image
