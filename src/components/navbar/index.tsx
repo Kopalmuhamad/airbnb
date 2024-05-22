@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <header
       className={`z-50 w-full h-[80px] fixed top-0 left-0 transition-colors ${
-        isScrolled ? "bg-accent-primary" : "bg-transparent"
+        isScrolled ? "bg-accent-primary" : "bg-white bg-opacity-10 backdrop-blur-sm"
       }`}
     >
       <div className="container h-full mx-auto flex items-center justify-between">
