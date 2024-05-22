@@ -1,6 +1,6 @@
-import ButtonPrimary from "@/components/ui/ButtonPrimary";
-import Input from "@/components/ui/Input";
-import Label from "@/components/ui/Label";
+import ButtonPrimary from "@/components/elements/ButtonPrimary";
+import Input from "@/components/elements/Input";
+import Label from "@/components/elements/Label";
 import { Imprima } from "next/font/google";
 import Image from "next/image";
 import React from "react";
