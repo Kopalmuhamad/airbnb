@@ -11,35 +11,14 @@ import "swiper/css/scrollbar";
 import avatarSample from "@/assets/images/avatar.png";
 import imageSample from "@/assets/images/banner1.jpg";
 import Image from "next/image";
+import CardSlider from "@/components/fragmanets/CardSlider";
 
 const HeaderDetail = () => {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
     <div className="w-full h-full flex items-start justify-center flex-col lg:col-span-2">
-      <Swiper
-        breakpoints={{
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-          },
-          1240: {
-            slidesPerView: 5,
-            spaceBetween: 15,
-          },
-        }}
-        freeMode={true}
-        modules={[FreeMode, Navigation, A11y, Scrollbar]}
-        navigation
-        initialSlide={0} // Slide pertama akan ditampilkan
-        className="flex items-center justify-start overflow-hidden w-full h-full lg:max-w-[100%]"
-        onReachEnd={() => setIsEnd(true)}
-        allowTouchMove={!isEnd}
-      >
+      <CardSlider>
         <SwiperSlide>
           <Image
             src={imageSample}
@@ -103,7 +82,7 @@ const HeaderDetail = () => {
             className="w-full h-full rounded-sm mt-2"
           />
         </SwiperSlide>
-      </Swiper>
+      </CardSlider>
     </div>
   );
 };
