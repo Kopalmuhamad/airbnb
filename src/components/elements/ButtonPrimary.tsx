@@ -2,16 +2,19 @@ import React from "react";
 
 interface ButtonPrimaryProps {
   children: React.ReactNode;
-  variant?: boolean;
-  rounded?: boolean;
+  variant?: "primary"|"secondary";
 }
 
-const ButtonPrimary = ({ children, variant, rounded }: ButtonPrimaryProps) => {
+const ButtonPrimary = ({ children, variant}: ButtonPrimaryProps) => {
   return (
     <button
-      className={`py-1 px-4 text-base font-semibold tracking-wide text-white ${
-        variant ? "bg-accent-secondary" : "bg-accent-primary"
-      } ${rounded ? "rounded-full flex items-center justify-center":"rounded-md"} sm:py-2`}
+      className={` text-white text-base font-semibold
+      ${
+        variant === "primary"
+          ? "py-2 px-4 rounded-md bg-accent-primary"
+          : "py-2 px-4 rounded-md bg-accent-secondary"
+      } 
+      `}
     >
       {children}
     </button>
