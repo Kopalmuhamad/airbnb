@@ -12,7 +12,7 @@ const DesktopMenuList = () => {
           <Link
             href={""}
             className={`text-base font-semibold ${
-              pathname === "/home" ? "text-accent-secondary" : ""
+              pathname === "/" ? "text-accent-secondary" : ""
             }`}
           >
             Home
