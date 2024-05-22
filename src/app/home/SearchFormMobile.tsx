@@ -1,5 +1,5 @@
-import Input from "@/components/ui/Input";
-import Label from "@/components/ui/Label";
+import Input from "@/components/elements/Input";
+import Label from "@/components/elements/Label";
 import React from "react";
 
 const SearchFormMobile = () => {

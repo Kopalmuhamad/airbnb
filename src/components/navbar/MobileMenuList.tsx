@@ -1,5 +1,5 @@
 import React from "react";
-import Toggle from "../ui/Toggle";
+import Toggle from "@/components/elements/Toggle";
 import Image from "next/image";
 import xIcon from "@/assets/icons/x.svg";
 import { useAtom } from "jotai";

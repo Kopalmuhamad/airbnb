@@ -2,7 +2,7 @@
 
 import React, { use, useEffect } from "react";
 import Image from "next/image";
-import Toggle from "../ui/Toggle";
+import Toggle from "@/components/elements/Toggle";
 import NavLogo from "./NavLogo";
 import burgerButton from "@/assets/icons/burger_toggle.svg";
 import MobileMenuList from "./MobileMenuList";

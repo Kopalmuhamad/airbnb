@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonPrimary from "../../components/ui/ButtonPrimary";
+import ButtonPrimary from "@/components/elements/Toggle";
 import SearchFormDesktop from "./SearchFormDesktop";
 
 const Banner = () => {
