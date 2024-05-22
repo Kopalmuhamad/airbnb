@@ -1,6 +1,6 @@
 import React from "react";
-import ButtonPrimary from "@/components/elements/Toggle";
 import SearchFormDesktop from "./SearchFormDesktop";
+import ButtonPrimary from './../../components/elements/ButtonPrimary';
 
 const Banner = () => {
   return (
@@ -9,7 +9,7 @@ const Banner = () => {
       <h1 className="text-xl md:text-2xl xl:text-3xl font-bold my-4 text-white">
         Book Top Hill Tent Experience Local Things To Do, Where Ever You Do
       </h1>
-      <ButtonPrimary>I'm flexible</ButtonPrimary>
+      <ButtonPrimary variant="primary">I'm flexible</ButtonPrimary>
     </main>
   );
 };

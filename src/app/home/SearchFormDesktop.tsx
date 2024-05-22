@@ -1,7 +1,6 @@
-import ButtonPrimary from "@/components/elements/ButtonPrimary";
+import ButtonRoundedFull from "@/components/elements/ButtonRoundedFull";
 import Input from "@/components/elements/Input";
 import Label from "@/components/elements/Label";
-import { Imprima } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 import searchIcon from "@/assets/icons/search.svg";
@@ -29,9 +28,9 @@ const SearchFormDesktop = () => {
           <Label bold>Guests</Label>
           <Input type="text" ghost nonePadding />
         </div>
-        <ButtonPrimary rounded>
+        <ButtonRoundedFull variant="primary">
           <Image src={searchIcon} alt="" width={24} height={24} />
-        </ButtonPrimary>
+        </ButtonRoundedFull>
       </form>
     </section>
   );

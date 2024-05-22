@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import avatarSample from "@/assets/images/avatar.png";
-import ButtonPrimary from "@/components/ui/ButtonPrimary";
+import ButtonPrimary from "@/components/elements/ButtonPrimary";
 import Box from "./Box";
 import FormCheckIn from "./FormCheckIn";
 import HeaderDetail from "./HeaderDetail";
@@ -63,7 +63,7 @@ const DetailProperty = () => {
             <p className="text-base font-medium mb-2">
               This host has reviews for other properties.
             </p>
-            <ButtonPrimary>View Other Reviews</ButtonPrimary>
+            <ButtonPrimary variant="primary">View Other Reviews</ButtonPrimary>
           </Box>
 
           <DividingLine />
@@ -104,7 +104,7 @@ const DetailProperty = () => {
             <span className="font-bold text-base">Rp.1.000.000/</span>
             <span>Night</span>
           </h1>
-          <ButtonPrimary>Check Avaibility</ButtonPrimary>
+          <ButtonPrimary variant="primary">Check Avaibility</ButtonPrimary>
         </div>
       </Box>
     </section>

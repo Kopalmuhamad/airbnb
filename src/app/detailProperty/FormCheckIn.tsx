@@ -1,4 +1,4 @@
-import ButtonPrimary from "@/components/ui/ButtonPrimary";
+import ButtonPrimary from "@/components/elements/ButtonPrimary";
 import React from "react";
 import DividingLine from "./DividingLine";
 
@@ -32,7 +32,7 @@ const FormCheckIn = () => {
       </form>
 
       <div className="flex items-center justify-center flex-col py-4 gap-y-2">
-        <ButtonPrimary>Instant Book</ButtonPrimary>
+        <ButtonPrimary variant="primary">Instant Book</ButtonPrimary>
         <h1 className="text-xl font-semibold">You’ll be able to review before paying</h1>
       </div>
 
