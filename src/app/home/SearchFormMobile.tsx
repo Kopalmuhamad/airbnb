@@ -1,3 +1,4 @@
+import ButtonPrimary from "@/components/elements/ButtonPrimary";
 import Input from "@/components/elements/Input";
 import Label from "@/components/elements/Label";
 import React from "react";
@@ -25,10 +26,11 @@ const SearchFormMobile = () => {
             <Input type="date" />
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full  mb-4">
           <Label>Guests</Label>
           <Input type="text" />
         </div>
+        <ButtonPrimary variant="primary">Search</ButtonPrimary>
       </form>
     </section>
   );
