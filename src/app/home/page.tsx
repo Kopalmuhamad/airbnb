@@ -10,7 +10,7 @@ const Home = () => {
       <Banner />
       <div className="container h-full mx-auto flex items-center justify-center flex-col text-center gap-y-8">
         <SearchFormMobile />
-        <PropertyList value="Recent House" />
+        <PropertyList />
       </div>
     </section>
   );
