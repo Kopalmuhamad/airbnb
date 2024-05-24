@@ -27,7 +27,7 @@ const FormCheckIn: React.FC<IProps> = ({ id }) => {
         start_date: startDate,
         end_date: endDate,
       });
-      setAvailability(response.data.available ? "Available" : "Not Available");
+      setAvailability(response.data.data.status ? "Available" : "Not Available");
     } catch (error) {
       setAvailability("Error checking availability");
       console.error(error);
@@ -37,7 +37,7 @@ const FormCheckIn: React.FC<IProps> = ({ id }) => {
   const handleBooking = async () => {
     if (availability === "Available") {
       try {
-        const response = await axiosInstance.post("/reservations/book", {
+        const response = await axiosInstance.post("/reservations", {
           homestay_id: parseInt(id),
           start_date: startDate,
           end_date: endDate,

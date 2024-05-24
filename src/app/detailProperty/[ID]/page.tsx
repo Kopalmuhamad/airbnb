@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import avatarSample from "@/assets/images/avatar.png";
 import ButtonPrimary from "@/components/elements/ButtonPrimary";
 import FormCheckIn from "./FormCheckIn";
 import HeaderDetail from "./HeaderDetail";

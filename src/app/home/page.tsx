@@ -9,7 +9,6 @@ const Home = () => {
     <section className="w-full h-full text-black">
       <Banner />
       <div className="container h-full mx-auto flex items-center justify-center flex-col text-center gap-y-8">
-        <SearchFormMobile />
         <PropertyList />
       </div>
     </section>

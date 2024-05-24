@@ -10,32 +10,32 @@ const DesktopMenuList = () => {
       <ul className="flex items-center justify-center gap-x-4">
         <li>
           <Link
-            href={""}
+            href={"/home"}
             className={`text-base font-semibold ${
-              pathname === "/" ? "text-accent-secondary" : ""
+              pathname === "/home" ? "text-accent-secondary" : ""
             }`}
           >
             Home
           </Link>
         </li>
         <li>
-          <Link href={""} className="text-base font-semibold">
+          <Link
+            href={"/"}
+            className={`text-base font-semibold ${
+              pathname === "/login" ? "text-accent-secondary" : ""
+            }`}
+          >
             Login
           </Link>
         </li>
         <li>
-          <Link href={""} className="text-base font-semibold">
-            Register
-          </Link>
-        </li>
-        <li>
           <Link
-            href={""}
+            href={"/register"}
             className={`text-base font-semibold ${
-              pathname === "/profile" ? "text-accent-secondary" : ""
+              pathname === "/register" ? "text-accent-secondary" : ""
             }`}
           >
-            Profile
+            Register
           </Link>
         </li>
       </ul>
