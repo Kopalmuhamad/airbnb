@@ -52,14 +52,20 @@ const Card = ({
           className="w-full h-[200px] object-cover"
         />
       )}
-      
+
       <h1 className="text-lg font-bold px-2 capitalize">{HomestayName}</h1>
       <p className="text-base font-medium px-2 flex items-center justify-start gap-x-1">
         {Description}
       </p>
       <div className="flex items-center justify-between text-base font-medium px-2">
         <span className="flex items-center justify-between gap-x-1">
-          <Image src={pinMaps} alt="" width={14} height={14} className="w-4 h-4" />
+          <Image
+            src={pinMaps}
+            alt=""
+            width={14}
+            height={14}
+            className="w-4 h-4"
+          />
           <p className="text-base font-medium capitalize">{Address}</p>
         </span>
       </div>
