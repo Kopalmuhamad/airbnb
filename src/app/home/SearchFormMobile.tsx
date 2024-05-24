@@ -11,7 +11,10 @@ const SearchFormMobile = () => {
           Place To Stays
         </h1>
       </header>
-      <form action="" className="w-full grid grid-cols-1 place-items-center text-start">
+      <form
+        action=""
+        className="w-full grid grid-cols-1 place-items-center text-start"
+      >
         <div className="w-full">
           <Label>Location</Label>
           <Input type="text" />

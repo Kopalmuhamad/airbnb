@@ -4,6 +4,7 @@ import Card from "./Card";
 import { getAllHomeStays } from "@/services/api";
 import { useState } from "react";
 import { HomeStaysData } from "./interface";
+
 interface PropertyListProps {
   value: string;
 }

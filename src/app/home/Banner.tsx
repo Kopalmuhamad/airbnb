@@ -1,6 +1,6 @@
 import React from "react";
 import SearchFormDesktop from "./SearchFormDesktop";
-import ButtonPrimary from './../../components/elements/ButtonPrimary';
+import ButtonPrimary from "./../../components/elements/ButtonPrimary";
 
 const Banner = () => {
   return (
