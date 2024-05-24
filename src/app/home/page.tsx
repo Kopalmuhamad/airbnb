@@ -1,6 +1,8 @@
+
 import PropertyList from "@/app/home/PropertyList";
 import Banner from "@/app/home/Banner";
 import SearchFormMobile from "./SearchFormMobile";
+
 
 const Home = () => {
   return (
